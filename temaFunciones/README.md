@@ -1,1 +1,1 @@
-Estos programas utilizan funciones de la biblioteca creada a tal efecto llamada Matematica.
+Estos programas utilizan funciones de la biblioteca Matematica creada a tal efecto.
