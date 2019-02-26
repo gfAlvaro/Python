@@ -25,7 +25,7 @@ def siguientePrimo( numero ):
 
     contador = numero + 1
 
-    while esPrimo( contador ) == False :
+    while esPrimo( contador ) == False:
         contador = contador + 1
     resultado = contador
         
