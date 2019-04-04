@@ -11,7 +11,7 @@ from io import open
 # @return boolean
 def esPrimo( i ):
 				
-	for k in range( 3 , int(i/2+1) ):
+	for k in range( 2 , int(i/2+1) ):
 		if( int(i) % k == 0 ):
 			return False
 			
