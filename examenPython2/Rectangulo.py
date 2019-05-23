@@ -37,15 +37,16 @@ class Rectangulo:
 
     # funcion para dibujar el rectángulo por pantalla
     def __str__( self ):
-        i = 0
+
         rectangulo = ""
-        while ( i < self.alto ):
-            j = 0
-            while( j < self.ancho ):
-                rectangulo += "[]"
-                j += 1
+        for i in range( self.alto ):
+            for j in range( self.ancho ):
+                if(  ( i == 0 ) or ( i == self.alto - 1 ) or ( j == 0 ) or ( j == self.ancho - 1 )  ):
+                    rectangulo += "[]"
+                else:
+                    rectangulo += "  "
+                
             rectangulo += '\n'
-            i += 1
 
         return rectangulo
 

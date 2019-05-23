@@ -18,15 +18,15 @@ class Cuadrado ( Rectangulo ):
     # @return int
     @property
     def lado( self ):
-        return super().alto
+        return self.alto
 
     # modificador de la propiedad de la clase
     # que hereda las propiedades de Rectangulo
     # @return int
     @lado.setter
     def lado( self, l ):
-        super().alto(l)
-        super().ancho(l)
+        self.alto = l
+        self.ancho = l
 
     # operador de sobrecarga para comparar dos Cuadrados
     # @param cuadrado
@@ -45,5 +45,23 @@ class Cuadrado ( Rectangulo ):
     # @return boolean
     def __lt__( self , cuadrado ):
         return self.lado < cuadrado.lado
+
+    # operador de sobrecarga para comparar dos Cuadrados
+    # @param cuadrado
+    # @return boolean
+    def __le__( self , cuadrado ):
+        return self.lado <= cuadrado.lado
+    
+    # operador de sobrecarga para comparar dos Cuadrados
+    # @param cuadrado
+    # @return boolean
+    def __ge__( self , cuadrado ):
+        return self.lado >= cuadrado.lado
+
+   # operador de sobrecarga para comparar dos Cuadrados
+    # @param cuadrado
+    # @return boolean
+    def __ne__( self , cuadrado ):
+        return self.lado != cuadrado.lado
 
 # Fin de la clase Cuadrado
